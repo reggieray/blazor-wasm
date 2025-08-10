@@ -85,3 +85,20 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 ```
+
+3. Trigger deployment
+
+You can do this either one of two ways:
+
+- make a change to the Blazor app and push to main, remember the trigger setup in the action on step 2.
+```
+on:
+  # Runs on pushes targeting the default branch for the app's folder path
+  push:
+    paths:
+      - src/Blazor.Wasm/** # 👈 update `src/Blazor.Wasm/**` to name of your project
+    branches:
+      - main
+```
+or
+- You can trigger manually by going to the `Actions` tab, finding `Deploy static content to Pages` and click `Run workflow`.
