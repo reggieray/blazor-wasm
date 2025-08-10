@@ -2,7 +2,7 @@
 
 This is an example repository on how to deploy a Blazor Web Assembly application to GitHub Pages using GitHub Actions.
 
-> This is the [live demo](https://reggieray.github.io/blazor-wasm/) for this repo.
+> This is the [live demo](https://reggieray.github.io/blazor-wasm/).
 
 1. Create the Blazor WebAssembly application
 
